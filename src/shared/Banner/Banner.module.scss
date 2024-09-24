@@ -1,0 +1,47 @@
+@import '../../app/styles/variables.scss';
+
+.banner {
+  margin-bottom: 48px;
+
+  &_item {
+    min-height: 344px;
+    max-width: 1116px;
+    margin: 0 auto;
+
+    width: 100%;
+    border-radius: 16px;
+    height: auto;
+
+    background-color: var(--gray-100-800);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 40px 56px;
+
+    img {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &_title {
+    color: var(--banner-color);
+    margin-bottom: 20px;
+  }
+  &_text {
+    color: var(--banner-color);
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 800px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 64px;
+    &_item {
+      height: 102px;
+      min-height: 0;
+      padding: 20px;
+    }
+  }
+}

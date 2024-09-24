@@ -1,0 +1,37 @@
+@import '../../app/styles/variables.scss';
+
+.depositCard {
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: var(--gray-100-800);
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_currency {
+    color: $grey-300;
+    margin-bottom: 4px;
+  }
+  &_value {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  &_date {
+    color: $grey-300;
+  }
+
+  @media (max-width: $screen-l) {
+    flex-direction: column;
+    padding: 16px 20px;
+    align-items: flex-start;
+    min-height: 102px;
+
+    &_value {
+      line-height: 28px;
+      font-size: 20px;
+    }
+  }
+}

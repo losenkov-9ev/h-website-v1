@@ -1,0 +1,40 @@
+@import '../../app/styles/variables.scss';
+
+.footer {
+  padding: 24px 0;
+
+  background-color: $grey-900;
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &_copy {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--copy-color);
+  }
+
+  &_up {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      svg path {
+        stroke: $grey-200;
+      }
+    }
+  }
+
+  svg path {
+    transition: all 0.3s;
+    stroke: $grey-0;
+  }
+
+  @media (max-width: $screen-m) {
+    padding: 16px 0;
+  }
+}

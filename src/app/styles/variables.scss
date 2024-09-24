@@ -1,0 +1,89 @@
+$grey-gradient-dark: linear-gradient(-45deg, #1a1a1a 0%, #1f1f1f 100%);
+$grey-gradient-light: linear-gradient(-45deg, #ebebeb 0%, #e0e0e0 100%);
+
+$grey-900: #141414;
+$grey-800: #1c1c1c;
+$grey-600: #292929;
+$grey-400: #3d3d3d;
+$grey-300: #ccc;
+$grey-200: #b8b8b8;
+$grey-100: #f5f5f5;
+$grey-0: #ffffff;
+
+$accent-900: #fc4dff29;
+$accent-600: #fc4dff;
+$accent-300: #fdc2ff;
+
+$success: #34c759;
+$dark-success: #19612b;
+
+$pending: #ffcc00;
+$dark-pending: #7a6200;
+
+$danger: #ff3b30;
+$dark-danger: #660500;
+
+$screen-xxl: 1400px;
+$screen-xl: 1200px;
+$screen-l: 968px;
+$screen-m: 768px;
+$screen-s: 620px;
+$screen-xs: 360px;
+
+body {
+  --gray-100-600: #{$grey-100};
+  --gray-0-900: #{$grey-0};
+  --gray-100-900: #{$grey-100};
+  --gray-0-800: #{$grey-0};
+  --gray-800-100: #{$grey-800};
+  --gray-100-800: #{$grey-100};
+  --gray-100-300: #{$grey-100};
+  --gray-400-300: #{$grey-400};
+  --gray-600-300: #{$grey-600};
+  --gray-600-100: #{$grey-600};
+  --gray-300-600: #{$grey-300};
+  --gray-900-0: #{$grey-900};
+  --d-gradient: #{$grey-gradient-light};
+  --d-gradient-negative: #{$grey-gradient-dark};
+  --d-border: #{$grey-200};
+  --select-border: #e7e7e7;
+  --notiffication-text: #a3a3a3;
+  --button-hover: #{$accent-900};
+  --copy-color: #a3a3a3;
+  --accent-300-900: #{$accent-300};
+  --accent-600-300: #{$accent-600};
+  --accent-300-600: #{$accent-300};
+  --accent-600-900: #{$accent-600};
+  --accent-icon: #{$grey-0};
+  --banner-color: #501e51;
+  --hover-color: #a3a3a3;
+}
+
+body.dark-theme {
+  --gray-100-600: #{$grey-600};
+  --gray-0-900: #{$grey-900};
+  --gray-100-900: #{$grey-900};
+  --gray-0-800: #{$grey-800};
+  --gray-800-100: #{$grey-100};
+  --gray-100-800: #{$grey-800};
+  --gray-100-300: #{$grey-300};
+  --gray-400-300: #{$grey-300};
+  --gray-600-300: #{$grey-300};
+  --gray-600-100: #{$grey-100};
+  --gray-300-600: #{$grey-600};
+  --gray-900-0: #{$grey-0};
+  --d-gradient: #{$grey-gradient-dark};
+  --d-gradient-negative: #{$grey-gradient-light};
+  --d-border: #{$grey-600};
+  --select-border: #1b1b1b;
+  --notiffication-text: #{$grey-300};
+  --button-hover: #{$grey-0};
+  --copy-color: #a3a3a3;
+  --accent-300-600: #{$accent-600};
+  --accent-600-300: #{$accent-300};
+  --accent-300-900: #{$accent-900};
+  --accent-600-900: #{$accent-900};
+  --accent-icon: #{$accent-900};
+  --banner-color: #{$accent-300};
+  --hover-color: #7a7a7a;
+}

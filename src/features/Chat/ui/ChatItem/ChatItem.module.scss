@@ -1,0 +1,51 @@
+@import '../../../../app/styles/variables.scss';
+
+.chatItem {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 12px;
+
+  &:last-child {
+    // padding-bottom: 82px;
+  }
+  &.chatItem_support {
+    flex-direction: row-reverse;
+  }
+  & + & {
+    margin-top: 20px;
+  }
+  &_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: none;
+    margin-bottom: auto;
+
+    svg rect {
+      fill: $grey-300;
+    }
+    svg path {
+      stroke: $grey-0;
+    }
+  }
+  &_message {
+    min-height: 42px;
+    padding: 8px 16px;
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--gray-0-900);
+    word-break: break-word;
+  }
+  &_time {
+    font-size: 14px;
+    line-height: 20px;
+    color: $grey-300;
+    margin-top: auto;
+  }
+}

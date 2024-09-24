@@ -1,0 +1,17 @@
+@import '../../../app/styles/variables.scss';
+
+.reviewModal {
+  &_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+  &_content {
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey-300;
+  }
+}

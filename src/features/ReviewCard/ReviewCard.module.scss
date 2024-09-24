@@ -1,0 +1,47 @@
+@import '../../app/styles/variables.scss';
+
+.reviewCard {
+  padding: 16px 24px;
+  border-radius: 16px;
+  background: var(--gray-100-800);
+
+  &.reviewCard_loading {
+    padding: 8px;
+  }
+
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  &_title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &_price {
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &_content {
+    color: var(--gray-400-300);
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $screen-s) {
+    &_title {
+      font-size: 24px;
+    }
+  }
+}

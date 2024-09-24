@@ -1,0 +1,12 @@
+@import '../../app/styles/variables.scss';
+
+.readMore {
+  line-height: 26px;
+  font-size: 16px;
+  color: inherit;
+
+  &_button {
+    color: inherit;
+    display: inline;
+  }
+}

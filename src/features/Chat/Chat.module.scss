@@ -1,0 +1,43 @@
+@import '../../app/styles/variables.scss';
+
+.chat {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+
+  &_btn {
+    background-color: var(--gray-900-0);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      width: 40px;
+      height: 40px;
+
+      path {
+        stroke: var(--gray-0-900);
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: $screen-l) {
+    bottom: 24px;
+    right: 24px;
+    &_btn {
+      width: 64px;
+      height: 64px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

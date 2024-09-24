@@ -1,0 +1,49 @@
+@import '../../app/styles/variables.scss';
+
+.reviews {
+  margin-bottom: 160px;
+  padding-top: 40px;
+
+  &_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    margin-bottom: 64px;
+  }
+  &_masonry {
+    margin-bottom: 48px;
+    display: flex;
+    width: auto;
+    gap: 16px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &_title {
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: $screen-xxl) {
+    &_box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: $screen-m) {
+    &_box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (max-width: $screen-s) {
+    margin-bottom: 80px;
+    padding-top: 160px;
+    &_box {
+      margin-bottom: 32px;
+    }
+    &_title {
+      margin-bottom: 32px;
+    }
+  }
+}

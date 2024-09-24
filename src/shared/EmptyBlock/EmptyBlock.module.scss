@@ -1,0 +1,20 @@
+@import '../../app/styles/variables.scss';
+
+.emptyBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  max-width: 100%;
+  width: 100%;
+
+  background: var(--d-gradient);
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  color: var(--gray-900-0);
+  border-radius: 16px;
+
+  margin-bottom: 64px;
+}

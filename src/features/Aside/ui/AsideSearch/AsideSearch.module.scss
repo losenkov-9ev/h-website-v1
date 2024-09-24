@@ -1,0 +1,51 @@
+@import '../../../../app/styles/variables.scss';
+
+.asideSearch_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--gray-0-900);
+  padding: 12px;
+  padding-bottom: 10px;
+}
+
+.asideSearch {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+
+  &_field {
+    max-width: 100%;
+    width: 100%;
+
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 256px;
+    background-color: var(--gray-100-600);
+    color: var(--gray-900-0);
+    padding-right: 46px;
+
+    &::placeholder {
+      color: $grey-300;
+    }
+  }
+  &_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+        stroke: $grey-300;
+      }
+    }
+  }
+}

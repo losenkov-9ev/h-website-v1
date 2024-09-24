@@ -1,0 +1,61 @@
+@import '../../app/styles/variables.scss';
+
+.top {
+  text-align: center;
+  margin-bottom: 64px;
+
+  height: 100vh;
+  height: var(--doc-height);
+  background-image: url('/top-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &_head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+
+    span {
+      color: $grey-300;
+      line-height: 26px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &_title {
+    font-size: 64px;
+    line-height: 70px;
+    padding-bottom: 24px;
+    font-weight: 500;
+  }
+  &_desription {
+    text-align: center;
+    color: $grey-300;
+    max-width: 546px;
+  }
+
+  @media (max-width: $screen-m) {
+    margin-top: 0;
+    margin-bottom: 64px;
+    &_title {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+}

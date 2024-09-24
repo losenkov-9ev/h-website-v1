@@ -1,0 +1,52 @@
+@import '../../app/styles/variables.scss';
+
+.aside {
+  padding: 8px;
+  border-radius: 24px;
+  position: sticky;
+  top: 24px;
+  left: 0;
+  width: 261px;
+  flex: none;
+  gap: 16px;
+  background: var(--d-gradient);
+
+  &_close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    display: none;
+
+    svg path {
+      stroke: $grey-300;
+    }
+  }
+
+  @media (max-width: $screen-xxl) {
+    width: 241px;
+  }
+  @media (max-width: $screen-l) {
+    &.asideOpened {
+      transform: translateY(0px);
+    }
+    &_close {
+      display: block;
+    }
+
+    transform: translateY(1500px);
+    transition: all 0.3s;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 100px;
+    height: auto;
+    overflow: auto;
+    width: 100%;
+    z-index: 100;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

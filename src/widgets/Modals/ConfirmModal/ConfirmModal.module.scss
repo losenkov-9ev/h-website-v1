@@ -1,0 +1,32 @@
+@import '../../../app/styles/variables.scss';
+
+.confirmModal {
+  padding: 16px 8px;
+
+  &_title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+  &_buttons {
+    display: flex;
+    gap: 8px;
+
+    :global(.link) {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 0;
+
+    &_title {
+      margin-bottom: 24px;
+    }
+    &_box {
+      margin-bottom: 24px;
+    }
+  }
+}

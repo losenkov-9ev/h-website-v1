@@ -1,0 +1,58 @@
+@import '../../../../app/styles/variables.scss';
+
+.asideItem {
+  &.asideItem_withSearch {
+    .asideItem_box {
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      padding-top: 58px;
+    }
+    .asideItem_boxInner {
+      height: 134px;
+    }
+  }
+  &_noResults {
+    text-align: center;
+    color: $grey-300;
+    margin: auto;
+
+    i {
+      max-width: 120px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+  }
+  &_title {
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--gray-900-0);
+  }
+  &_box {
+    position: relative;
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 16px;
+
+    background-color: var(--gray-0-900);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &_boxInner {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 16px;
+    max-height: 134px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}

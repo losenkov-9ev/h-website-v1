@@ -1,0 +1,28 @@
+@import '../../app/styles/variables.scss';
+
+.accontSettings {
+  margin-bottom: 160px;
+  padding-top: 40px;
+  &_title {
+    text-align: left;
+    margin-bottom: 48px;
+  }
+  &_box {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  @media (max-width: $screen-l) {
+    &_box {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  @media (max-width: $screen-s) {
+    padding-top: 160px;
+    &_title {
+      margin-bottom: 40px;
+    }
+  }
+}

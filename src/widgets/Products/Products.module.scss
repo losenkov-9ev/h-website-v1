@@ -1,0 +1,120 @@
+@import '../../app/styles/variables.scss';
+
+.products {
+  margin-bottom: 160px;
+
+  &_title {
+    line-height: 90px;
+  }
+  &_head {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 24px;
+  }
+  &_wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  &_toggleBox {
+    display: none;
+    &.products_accordeon_opened {
+      display: block;
+    }
+  }
+  &_accordeonArrow {
+    transition: all 0.3s;
+    width: 24px;
+    height: 24px;
+    path {
+      stroke: var(--gray-0-900);
+    }
+    &.products_accordeon_opened {
+      transform: rotate(180deg);
+    }
+  }
+  &_cards {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  &_asideButton {
+    display: none !important;
+    margin-bottom: 32px !important;
+  }
+
+  &_accordeon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-radius: 16px;
+    background-color: var(--gray-900-0);
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: var(--gray-0-900);
+  }
+  &_accordeonInfo {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  @media (max-width: $screen-l) {
+    &_head {
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    &_accordeon {
+      padding: 16px;
+    }
+    &_title {
+      margin-right: 36px;
+    }
+    &_asideButton {
+      display: block !important;
+    }
+    &_cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+  }
+  @media (max-width: $screen-m) {
+    &_controls {
+      margin-bottom: 32px;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, 1fr);
+
+      & > *:nth-child(3) {
+        grid-column: span 2;
+      }
+    }
+  }
+  @media (max-width: $screen-s) {
+    margin-bottom: 64px;
+    &_accordeon {
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    &_accordeonInfo {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    &_cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+  }
+}

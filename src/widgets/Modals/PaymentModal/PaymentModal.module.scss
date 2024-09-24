@@ -1,0 +1,103 @@
+@import '../../../app/styles/variables.scss';
+
+.paymentModal {
+  padding: 16px 8px;
+  &_title {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  &_count {
+    max-width: 100%;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--gray-0-900);
+    line-height: 26px;
+
+    color: var(--gray-negative-700);
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_counter {
+    display: flex;
+    align-items: center;
+  }
+  &_counterField {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+
+    color: var(--gray-900-0);
+    background-color: var(--gray-100-600);
+  }
+  &_input {
+    background-color: var(--gray-0-900) !important;
+  }
+  &_counterItem {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  &_counter {
+    background: var(--gray-0-900);
+    border-radius: 16px;
+    padding: 4px;
+  }
+  &_countName {
+    display: block;
+    width: 238px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  &_close {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+  &_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 0;
+
+    &_title {
+      margin-bottom: 24px;
+    }
+    &_box {
+      margin-bottom: 24px;
+    }
+  }
+}

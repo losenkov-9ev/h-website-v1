@@ -1,0 +1,26 @@
+<svg
+  width="40"
+  height="40"
+  viewBox="0 0 40 40"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="20" fill="#D5A54C" />
+  <path
+    fillRule="evenodd"
+    clipRule="evenodd"
+    d="M19.9849 23.3462C16.1173 23.3462 12.8145 23.931 12.8145 26.2729C12.8145 28.6148 16.0964 29.2205 19.9849 29.2205C23.8525 29.2205 27.1545 28.6348 27.1545 26.2938C27.1545 23.9529 23.8735 23.3462 19.9849 23.3462Z"
+    stroke="#F5F5F5"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    fillRule="evenodd"
+    clipRule="evenodd"
+    d="M19.9849 20.0059C22.523 20.0059 24.5802 17.9478 24.5802 15.4097C24.5802 12.8716 22.523 10.8145 19.9849 10.8145C17.4468 10.8145 15.3887 12.8716 15.3887 15.4097C15.3802 17.9392 17.424 19.9973 19.9525 20.0059H19.9849Z"
+    stroke="#F5F5F5"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>

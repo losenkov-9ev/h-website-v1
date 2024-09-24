@@ -1,0 +1,20 @@
+@import '../../app/styles/variables.scss';
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+
+  @media (max-width: $screen-s) {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+
+    &_select:last-child {
+      grid-column: span 2;
+    }
+  }
+}

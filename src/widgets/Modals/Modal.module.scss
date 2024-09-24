@@ -1,0 +1,99 @@
+@import '../../app/styles/variables.scss';
+
+.ModalWrapper {
+  &_overlay {
+    background-color: rgba(0, 0, 0, 0.64);
+    transition: opacity 200ms ease-in-out;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9000;
+    opacity: 0;
+  }
+  &_overlay__after_open {
+    opacity: 1;
+  }
+  &_overlay__before_close {
+    opacity: 0;
+  }
+  &_close {
+    position: absolute;
+    right: -32px;
+    top: -32px;
+    width: 24px;
+    height: 24px;
+    svg rect {
+      transition: all 0.3s;
+      stroke: var(--gray-100-300);
+    }
+  }
+  &_content {
+    transition: opacity 200ms ease-in-out;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: var(--gray-100-900);
+
+    outline: none;
+
+    max-width: 416px;
+    width: 100%;
+    border-radius: 24px;
+  }
+  &_content__after_open {
+    opacity: 1;
+  }
+  &_content__before_close {
+    opacity: 0;
+  }
+
+  &_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 24px;
+    border-bottom: 1px solid var(--select-border);
+
+    button {
+      width: 24px;
+      height: 24px;
+
+      svg path {
+        transition: all 0.3s;
+        stroke: var(--select-color-placeholder);
+      }
+
+      &:hover {
+        svg path {
+          stroke: #ff4d4d;
+        }
+      }
+    }
+  }
+  &_box {
+    padding: 16px 24px;
+  }
+
+  @media (max-width: $screen-l) {
+    &_box {
+      padding: 16px 20px;
+    }
+  }
+  @media (max-width: $screen-m) {
+    &_content {
+      max-width: 95%;
+    }
+    &_close {
+      top: -40px;
+      right: 0;
+    }
+  }
+}

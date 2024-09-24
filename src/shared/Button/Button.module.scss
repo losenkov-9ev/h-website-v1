@@ -1,0 +1,83 @@
+@import '../../app/styles/variables.scss';
+
+.button {
+  --buttonText: var(--gray-0-900);
+  --buttonBg: var(--gray-900-0);
+  --buttonHover: var(--gray-600-300);
+
+  padding: 8px 24px;
+  padding-bottom: 6px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: var(--buttonBg);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--buttonText) !important;
+  transition: all 0.2s;
+
+  text-align: center;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &.button_themeReverse {
+    --buttonText: var(--gray-900-0);
+    --buttonBg: var(--gray-0-900);
+    --buttonHover: var(--gray-300-600);
+  }
+
+  &.button_fullWidth {
+    max-width: 100%;
+    width: 100%;
+  }
+  &.button_notCetered {
+    margin: 0;
+  }
+  &.button_view_square {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+  }
+  &.button_view_outlined {
+    background-color: transparent;
+    border: 1px solid var(--buttonBg);
+    color: var(--buttonBg) !important;
+    padding: 6px 22px;
+    padding-bottom: 4px;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+  &.button_view_empty {
+    background-color: transparent;
+    color: var(--buttonBg) !important;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    path {
+      transition: all 0.2s;
+      stroke: var(--buttonText);
+    }
+  }
+
+  &:hover {
+    background-color: var(--buttonHover);
+    color: var(--buttonText) !important;
+
+    svg path {
+      stroke: var(--buttonText) !important;
+    }
+  }
+}
